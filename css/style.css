@@ -75,12 +75,28 @@ body main section article {
   left: 0;
   font-size: 80px;
   color: #fff;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 1;
 }
 body main section article.on {
-  display: flex;
+  opacity: 1;
+  z-index: 2;
+}
+body main section article:nth-of-type(1) {
+  height: 400px;
+}
+body main section article:nth-of-type(2) {
+  height: 350px;
+}
+body main section article:nth-of-type(3) {
+  height: 450px;
+}
+body main section article:nth-of-type(4) {
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
